@@ -30,7 +30,7 @@
 
 /*all list decoration*/
 .listnone {
-    list-style: none;
+       list-style: none;
 }
 
 /*---------------------------/GLOBAL----------------------*/
@@ -41,9 +41,25 @@ body {
     font-weight: 400;
 }
 
+/*---------------------------CONTAINER----------------------*/
+.container{
+    display: block;
+    width: 1240px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid tomato;
+}
+
 /*---------------------------HEADER----------------------*/
 
+.menu{
+    display: flex;
+    align-items: center;
+}
+
 /*-----------Logo------------*/
+
 .nav-logo{
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -59,10 +75,27 @@ body {
 }
 
 /*nav*/
-.nav-main,
-.nav-adres {
-    font-weight: 500;
+
+.nav-main{
+        display: flex;
+        font-weight: 500;
+        margin-left: 92px;
 }
+
+.nav-main > .nav-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.nav-adres{
+    display: flex;
+    font-weight: 500;
+    margin-left: 331px;
+}
+
+.nav-adres>.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 
 .nav-main .link{
     text-decoration: none;
