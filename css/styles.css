@@ -34,6 +34,10 @@
        margin-left: 0;
        padding: 0;
 }
+
+
+
+
 /*---------------------------CONTAINER----------------------*/
 .container {
     display: block;
@@ -88,6 +92,8 @@ body {
 
     display: flex;
     margin-left: 93px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .nav-main > .nav-item:not(:last-child){
@@ -110,7 +116,7 @@ body {
     text-decoration: none;
     color: var(--blacknav);
     font-size: 14px;
-    line-height: 1.15;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
@@ -190,6 +196,21 @@ body {
     display: none;
 }
 
+.rinciples-list{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list-item{
+    max-width: 270px;
+}
+
+.list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
 .principles-head{
     color: var(--blacknav);
     font-weight: 700;
@@ -197,12 +218,41 @@ body {
     line-height: 1.14;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
 }
 .principles-deskrp{
     font-size: 14px;
-    line-height: 2;
+
+    /*была ощибка в ДЗ 2 по "line-height: 2" */
+    line-height: 1.714;
     letter-spacing: 0.03em;
+
+    margin: 0px;
+    padding: 0px;
 }
+/*-------------------------specialization------------------------*/
+.section-h{
+    margin: 0px 0px 50px 0px;
+}
+
+.specialization-img{
+    display: block;
+}
+
+.specialization-list{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.specialization-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*------------------------/specialization------------------------*/
+
 
 /*tem*/
 .team{
