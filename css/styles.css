@@ -364,7 +364,10 @@ body {
 /*sitefooter*/
 .sitefooter {
     background-color: var(--dbgcolorblack);
-   
+}
+
+.foter-bloc{
+    padding-top: 60px;
 }
 
 /*footer logo*/
