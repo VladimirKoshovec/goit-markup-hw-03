@@ -368,6 +368,7 @@ body {
 
 .foter-bloc{
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /*footer logo*/
@@ -379,6 +380,14 @@ text-decoration: none;
 font-size: 26px;
 line-height: 1.2;
 letter-spacing: 0.03em;
+
+display: block;
+margin-bottom: 20px;
+}
+
+.footerlist{
+    margin: 0px;
+    padding: 0px;
 }
 
 .sitefooter-logo span {
@@ -392,8 +401,9 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.714;
 color: var(--brandwhite);
-letter-spacing: 0.03em
+letter-spacing: 0.03em;
 }
+
 /*footer links*/
 .footer-link{
 text-decoration: none;
@@ -401,7 +411,13 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.714;
 color:var(--whiteop);
-letter-spacing: 0.03em
+letter-spacing: 0.03em;
+
+}
+
+.foter-item:not(:last-child){
+    display:block;
+    margin-bottom: 9px;
 }
 
 .footer-adr:hover, .footer-adr:focus,
