@@ -16,6 +16,8 @@
     --whiteop:rgba(255, 255, 255, 0.6);
     --dbgcolorblack:#2F303A;
     --dbgcolorgray:#F5F4FA;
+
+    --portfolio-gap: 30px;
 }
 
 /*all visible site section h2 decoration*/
@@ -199,8 +201,18 @@ body {
 
 /*principles*/
 .principles h2{
-    display: none;
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
 }
+
 
 .rinciples-list{
     display: flex;
@@ -326,7 +338,18 @@ body {
 
 /*-------------------------portfolio-filter----------------------*/
 .portfolio-title{
-    display: none;
+
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+    
 } 
 
 .portfolio-filtr {
@@ -371,31 +394,40 @@ body {
 
 .portfolio-cards{
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-
     margin: 0px;
     padding: 0px;
-}
 
-.portfolio-cards :not(:last-child){
+    display: flex;
+    flex-wrap: wrap;
+
+    /* justify-content: center;
+    align-items: center;
+    gap: 30px; */
+   
+    margin-left: calc(-1 * var(--portfolio-gap));
+    margin-top: calc(-1 * var(--portfolio-gap));
     
 }
 
 .cards-img{
+
     display: block;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+
+    max-width: 100%;
+    height: auto;
+    
 }
 
-.portfolio-items{
+.portfolio-cards > .portfolio-items{
 
-   display: block;
-   width: 370px;
+   /* display: block; */
 
    padding-bottom: 20px;
+
+   flex-basis: calc(100% / 3 - var(--portfolio-gap));
+   margin-left: var(--portfolio-gap);
+   margin-top: var(--portfolio-gap);
 
    border: 1px solid #EEEEEE;
 }
@@ -409,7 +441,7 @@ body {
     
     padding: 0px;
     
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 24px;
     margin-right: 24px;
     margin-bottom: 4px;
