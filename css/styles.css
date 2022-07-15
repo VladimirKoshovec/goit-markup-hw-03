@@ -306,7 +306,7 @@ body {
 }
 
 .team-pfoto{
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .team-name{
@@ -320,6 +320,7 @@ body {
     margin: 0px;
     padding: 0px;
     
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -436,7 +437,6 @@ body {
 
 .card-border{
     border: 1px solid #EEEEEE;
-
     padding-bottom: 20px;
 }
 
