@@ -135,7 +135,7 @@ body {
 
 
 .pagehader{
-    /*border-bottom: 1px solid #ECECEC;*/
+    border-bottom: 1px solid #ECECEC;
 } 
 
 /*---------------------------/HEADER----------------------*/
@@ -317,10 +317,20 @@ body {
 
 /*-------------------------PORTFOLIO.HTML------------------------*/
 
-/*portfolio*/
+/*-------------------------portfolio-filter----------------------*/
 .portfolio-title{
     display: none;
 } 
+
+.portfolio-filtr {
+    display: flex;
+
+    margin: 0px;
+    padding: 0px;
+
+    margin-bottom: 50px;
+    justify-content: center;
+}
 
 .portfolio-button {
     cursor: pointer;
@@ -332,6 +342,16 @@ body {
     color: var(--blacknav);
     background: var(--dbgcolorgray);
     letter-spacing: 0.03em;
+
+    display: block;
+    border-radius: 4px;
+    padding: 6px 22px 6px 22px;
+    border: none;
+}
+
+.filter-item:not(:last-child){
+    
+    margin-right: 8px;
 }
 
 .portfolio-button:hover,
@@ -339,22 +359,67 @@ body {
     color: var(--brandwhite);
     background: var(--brandblue);
 }
+/*-------------------------/portfolio-filter----------------------*/
+/*-------------------------portfolio-cards------------------------*/
 
+.portfolio-cards{
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 
-.portfolio h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+.portfolio-cards :not(:last-child){
+    
+}
+
+.cards-img{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.portfolio-items{
+
+   display: block;
+   width: 370px;
+
+   padding-bottom: 20px;
+
+   border: 1px solid #EEEEEE;
+}
+
+.card-h{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     color: #212121;
     letter-spacing: 0.06em;
     
+    padding: 0px;
+    
+    margin-top: 0px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 4px;
 }
 
-.portfolio p{
+
+.card-desk{
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
+
+    padding: 0px;
+
+    margin-top: 0px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 0px;
 }
 /*-------------------------PORTFOLIO.HTML------------------------*/
 
