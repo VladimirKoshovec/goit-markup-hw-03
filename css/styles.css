@@ -66,11 +66,20 @@ body {
 
 /*---------------------------HEADER----------------------*/
 
+.pagehader{
+    border-bottom: 1px solid #ECECEC;
+    padding-top:24px;
+    padding-bottom: 25px;
+} 
+
+.hader-nav {
+    display: flex;
+    align-items: center;
+}
+
 .menu{
     display: flex;
     align-items: center;
-    padding-top:24px;
-    padding-bottom: 25px;
 }
 
 /*-----------Logo------------*/
@@ -95,12 +104,9 @@ body {
     font-weight: 500;
 
     display: flex;
-
     margin: 0px;
     padding: 0px;
     margin-left: 93px;
-    /*margin-top: 32px;
-    margin-bottom: 32px;*/
 }
 
 .nav-main > .nav-item:not(:last-child){
@@ -113,7 +119,7 @@ body {
     margin: 0px;
     padding: 0px;
     display: flex;
-    margin-left: 331px;
+    margin-left: auto;
 }
 
 .nav-adres>.nav-item:not(:last-child) {
@@ -142,10 +148,6 @@ body {
     color: var(--brandblue);
 }
 
-
-.pagehader{
-    border-bottom: 1px solid #ECECEC;
-} 
 
 /*---------------------------/HEADER----------------------*/
 
@@ -202,6 +204,11 @@ body {
 /*---------------------------/HERO----------------------*/
 
 /*principles*/
+
+.principles {
+    padding-bottom: 47px;
+}
+
 .principles h2{
     position: absolute; 
     width: 1px; 
@@ -253,6 +260,11 @@ body {
     padding: 0px;
 }
 /*-------------------------specialization------------------------*/
+
+.specialization{
+    padding-top: 47px;
+}
+
 .section-h{
     margin: 0px 0px 50px 0px;
 }
@@ -341,7 +353,6 @@ body {
 
 /*-------------------------portfolio-filter----------------------*/
 .portfolio-title{
-
     position: absolute; 
     width: 1px; 
     height: 1px; 
@@ -396,16 +407,11 @@ body {
 /*-------------------------portfolio-cards------------------------*/
 
 .portfolio-cards{
-
     margin: 0px;
     padding: 0px;
 
     display: flex;
     flex-wrap: wrap;
-
-    /* justify-content: center;
-    align-items: center;
-    gap: 30px; */
    
     margin-left: calc(-1 * var(--portfolio-gap));
     margin-top: calc(-1 * var(--portfolio-gap));
@@ -413,30 +419,26 @@ body {
 }
 
 .cards-img{
-
     display: block;
-    /* margin-bottom: 20px; */
-
+    
     max-width: 100%;
     height: auto;
     
 }
 
 .portfolio-cards > .portfolio-items{
-
-   /* display: block; */
-
-   padding-bottom: 20px;
-
    flex-basis: calc(100% / 3 - var(--portfolio-gap));
    margin-left: var(--portfolio-gap);
    margin-top: var(--portfolio-gap);
 
-   /* border: 1px solid #EEEEEE; */
 }
 
 .card-border{
+
     border: 1px solid #EEEEEE;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 20px;
 }
 
@@ -448,11 +450,9 @@ body {
     letter-spacing: 0.06em;
     
     padding: 0px;
-    
-    margin-top: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 4px;
+    margin:0px;
+   
+    margin-bottom: 4px; 
 }
 
 
@@ -462,11 +462,8 @@ body {
     letter-spacing: 0.03em;
 
     padding: 0px;
+    margin: 0px;
 
-    margin-top: 0px;
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 0px;
 }
 /*-------------------------PORTFOLIO.HTML------------------------*/
 
@@ -476,9 +473,7 @@ body {
 /*sitefooter*/
 .sitefooter {
     background-color: var(--dbgcolorblack);
-}
 
-.foter-bloc{
     padding-top: 60px;
     padding-bottom: 60px;
 }
